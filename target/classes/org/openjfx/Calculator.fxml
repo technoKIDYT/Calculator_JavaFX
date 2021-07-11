@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="350.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #16D3FE, #3393FF);;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.CalculatorController">
+    <children>
+        <VBox layoutX="14.0" layoutY="277.0" prefHeight="447.0" prefWidth="350.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                    <children>
+                        <Button fx:id="btnClear" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: transparent;" text="C">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="()" textFill="#25b1ff">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnPer" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="\%" textFill="#25b1ff">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnDivide" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="/" textFill="#25b1ff">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                    <children>
+                        <Button fx:id="btnOne" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="1">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnTwo" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="2">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnThree" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="3">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnMultiply" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="X" textFill="#25b1ff">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                    <children>
+                        <Button fx:id="btnFour" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="4">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnFive" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="5">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnSix" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="6">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnPlus" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="+" textFill="#25b1ff">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                    <children>
+                        <Button fx:id="btnSeven" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="7">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnEight" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="8">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnNine" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="9">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnMinus" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="-" textFill="#25b1ff">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text=".">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnZero" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="0">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnThreeZero" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: #FFFFFF;" text="000">
+                            <font>
+                                <Font name="Berlin Sans FB" size="18.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnEquals" mnemonicParsing="false" onAction="#handleAllOperations" prefHeight="45.0" prefWidth="60.0" style="-fx-background-color: #2D9FFB; -fx-text-fill: #FFFFFF;" text="=">
+                            <font>
+                                <Font name="Berlin Sans FB" size="22.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+      <AnchorPane layoutY="201.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: #0C263B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="132.0" layoutY="14.0" text="Calculator" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFinalOut" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="40.0" layoutY="129.0" prefHeight="60.0" prefWidth="296.0" text="= 30" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblExpr" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="113.0" prefHeight="16.0" prefWidth="320.0" text="10 + 20" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
